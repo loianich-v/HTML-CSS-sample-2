@@ -1,0 +1,66 @@
+:root {
+    --color-primary-dark: #465929;
+    --color-primary-light: #819B57;
+    --color-brand-light: #FAF4EA;
+    --color-brand-dark: #31261A;
+}
+
+/* Base */
+body {
+    color: var(--color-brand-dark);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-title .accent {
+    color: var(--color-primary-dark);
+}
+
+/* Buttons */
+
+.button {
+    color: var(--color-brand-light);
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--color-primary-dark);
+    background-color: transparent;
+}
+
+/* Link */
+
+.link {
+    color: var(--color-brand-light);
+}
+
+.link:hover {
+    color: var(--color-primary-light);
+}
+
+/* Hero title */
+
+.hero-title .accent {
+    color: var(--color-primary-light);
+}
+
+/* Traditions section */
+
+.advantages-list {
+    background-color: var(--color-primary-light);
+    color: var(--color-brand-light);
+}
+
+/* Chefs section */
+/* Formats section */
+/* Contacts section */
+/* Footer */
