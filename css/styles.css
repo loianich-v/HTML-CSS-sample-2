@@ -515,11 +515,11 @@ my changes */
 }
 
 .modal {
+  position: relative;
   width: 880px;
   height: 880px;
   border-radius: 32px;
   background-color: var(--color-brand-light);
-  position: relative;
 }
 
 .backdrop.is-hidden {
