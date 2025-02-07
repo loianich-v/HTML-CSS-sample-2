@@ -1,22 +1,28 @@
 .mobile-menu {
-  position: fixed;
-  z-index: 5;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(49, 38, 26, 0.4);
-  transform: translateX(100%);
-  transition: transform 1s;
+  transform: translateY(-400px);
+  transition: transform 0.5s;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
 
   &.is-open {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   &__btn-close {
     position: absolute;
     top: 24px;
-    right: 24px;
+    right: 48px;
     z-index: 6;
   }
 
@@ -37,19 +43,30 @@
 
   &__container {
     width: 100%;
-    height: 300px;
+    min-width: 320px;
+    height: auto;
     background-color: var(--color-brand-light);
     display: flex;
     justify-content: center;
     padding: 46px 10px 10px;
+    flex-wrap: nowrap;
 
     position: absolute;
     top: 0;
     right: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      height: 360px;
+    }
   }
 
   &__logo {
     margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 120px;
+      height: auto;
+    }
   }
 
   &__list {
@@ -61,6 +78,10 @@
       font-size: 14px;
       font-weight: 600;
       color: var(--color-brand-dark);
+
+      @media screen and (min-width: $bp-tablet) {
+        font-size: 24px;
+      }
 
       &:hover {
         color: var(--color-primary-light);
