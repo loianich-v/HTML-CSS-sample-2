@@ -1,0 +1,92 @@
+.chefs-section {
+  padding: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 20px 0;
+  }
+
+  &__title {
+    position: relative;
+    margin: 0 auto 24px;
+    /* центрування в секції margin-bottom: 80px; */
+    /* max-width: 520px; </br>*/
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0 auto 48px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0 auto 80px;
+    }
+
+    &::before,
+    &::after {
+      display: none;
+      content: '';
+      width: 352px;
+      height: 2px;
+      background-color: var(--color-pseudo);
+      position: absolute;
+
+      @media screen and (min-width: $bp-tablet) {
+        display: flex;
+        // width: 252px;
+        width: 100%;
+        max-width: calc((100% - 280px) / 2);
+        height: 2px;
+        background-color: var(--color-pseudo);
+        bottom: 16px;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+        width: 352px;
+        height: 2px;
+        background-color: var(--color-pseudo);
+        /* border: 1px solid var(--color-pseudo); */
+        bottom: 24px;
+      }
+    }
+
+    &::before {
+      @media screen and (min-width: $bp-tablet) {
+        left: -8px;
+      }
+      @media screen and (min-width: $bp-desktop) {
+        left: -8px;
+      }
+      /* 352 width + 8 gap */
+    }
+
+    &::after {
+      @media screen and (min-width: $bp-tablet) {
+        right: -8px;
+      }
+      @media screen and (min-width: $bp-desktop) {
+        right: -8px;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 50px 30px;
+    }
+  }
+
+  &__item {
+    margin: 0 auto;
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 48px) / 2);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+}

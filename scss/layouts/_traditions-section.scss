@@ -1,0 +1,74 @@
+.traditions-section {
+  padding: 4px 0;
+  // -16px margin-block-end
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 96px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: space-around;
+      gap: 10px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: space-around;
+      gap: 40px;
+    }
+
+    &--restrict-width {
+      width: 100%;
+      max-width: 440px;
+
+      @media screen and (min-width: $bp-desktop) {
+        max-width: 660px;
+      }
+      /* щоб не робити бр після "зберегла смак" */
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__text {
+    &--limited-width {
+      max-width: 420px;
+
+      @media screen and (min-width: $bp-tablet) {
+        max-width: 336px;
+      }
+    }
+  }
+
+  &__image {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      width: 300px;
+      height: auto;
+      border-top-left-radius: 400px;
+      border-top-right-radius: 400px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      width: 392px;
+      height: auto;
+      border-top-left-radius: 400px;
+      border-top-right-radius: 400px;
+    }
+  }
+}

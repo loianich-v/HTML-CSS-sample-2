@@ -1,0 +1,44 @@
+.formats-section {
+  &__title {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__paglist {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
+  }
+}
+
+.swiper-slide-center {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: flex;
+  justify-content: center;
+}

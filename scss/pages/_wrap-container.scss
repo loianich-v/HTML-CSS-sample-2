@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  max-width: 1288px;
+  /* 1288 1240 + 24 + 24 */
+  margin: 0 auto;
+  padding: 0 24px;
+
+  &--restrict {
+    @media screen and (min-width: $bp-tablet) {
+      padding: 0 48px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 0 24px;
+    }
+  }
+}

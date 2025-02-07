@@ -1,0 +1,39 @@
+.address {
+  &__list,
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-brand-light);
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
+
+  &__social {
+    fill: var(--color-brand-light);
+
+    &:hover {
+      fill: var(--color-primary-light);
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__copytext {
+    font-size: 14px;
+    color: var(--color-brand-brown);
+  }
+}

@@ -1,0 +1,45 @@
+.input {
+  position: relative;
+
+  &__label {
+    position: absolute; /* робить елемент блоковим за замов */
+    left: 42px;
+    top: 16px;
+  }
+
+  &__controller {
+    background-color: var(--color-brand-light);
+    border: 1px solid var(--color-brand-brown);
+    border-radius: 8px;
+
+    display: flex;
+    padding: 12px 24px; /* висота поля вв задається падінгами*/
+    width: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 16px 42px;
+    }
+
+    &:focus {
+      color: var(--color-brand-dark);
+      border-color: var(--color-primary-light);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-brand-brown);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+
+      @media screen and (min-width: $bp-tablet) {
+        font-size: 16px;
+        line-height: 18.75px;
+      }
+    }
+
+    &:focus::placeholder {
+      color: black;
+    }
+  }
+}

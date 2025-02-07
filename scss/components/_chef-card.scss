@@ -1,0 +1,79 @@
+.chef-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    gap: 20px;
+  }
+  @media screen and (min-width: $bp-desktop) {
+    gap: 30px;
+  }
+
+  &__photo {
+    width: 140px;
+    border-radius: 2px 2px 2px 116px;
+    box-shadow: -10px 10px 0px 0px var(--color-brand-light),
+      -10px 10px 0px 1px var(--color-brand-brown);
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 200px;
+      border-radius: 4px 4px 4px 200px;
+      box-shadow: -12px 12px 0px 0px var(--color-brand-light),
+        -12px 12px 0px 2px var(--color-brand-brown);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 240px;
+      border-radius: 4px 4px 4px 200px;
+      box-shadow: -16px 16px 0px 0px var(--color-brand-light),
+        -16px 16px 0px 2px var(--color-brand-brown);
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 21px;
+    font-size: 14px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 24px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 24px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__article {
+    width: 260px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
