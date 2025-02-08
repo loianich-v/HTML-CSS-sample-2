@@ -17,11 +17,11 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <!-- logo -->
+            <!-- // logo -->
             <a href="/">
               <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
             </a>
-            <!-- menu -->
+            <!-- // menu -->
             <ul class="header__menu">
               <li>
                 <a class="link" href="#traditions-section">Наші традиції</a>
@@ -31,7 +31,7 @@
               <li><a class="link" href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
-          <!-- order the call -->
+          <!-- //  order the call -->
           <button
             class="modal__btn-open js-modal-btn-open button header__button"
             type="button">
@@ -44,44 +44,46 @@
               <use href="./images/icons.svg#icon-burger"></use>
             </svg>
           </button>
-          <div class="mobile-menu">
-            <div class="mobile-menu__container">
-              <button
-                class="modal__btn-close mobile-menu__btn-close js-menu-btn-close"
-                type="button">
-                <svg width="16" height="16">
-                  <use href="./images/icons.svg#icon-button-close"></use>
-                </svg>
-              </button>
-              <nav class="mobile-menu__nav">
-                <!-- logo -->
-                <a href="/">
-                  <img
-                    class="mobile-menu__logo"
-                    src="./images/logo-black.svg"
-                    width="80px"
-                    height="auto"
-                    alt="Логотип сучасної пекарні, чорний" />
-                </a>
-                <ul class="mobile-menu__list">
-                  <li>
-                    <a class="link" href="#traditions-section">Наші традиції</a>
-                  </li>
-                  <li>
-                    <a class="link" href="#chefs-section">Шеф-кухарі</a>
-                  </li>
-                  <li><a class="link" href="#formats-section">Формати</a></li>
-                  <li><a class="link" href="#footer-section">Контакти</a></li>
-                </ul>
-              </nav>
-              <!-- script mobile -->
-            </div>
-          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
+        <!-- + -->
+        <div class="mobile-menu">
+          <div class="mobile-menu__container">
+            <button
+              class="modal__btn-close mobile-menu__btn-close js-menu-btn-close"
+              type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-button-close"></use>
+              </svg>
+            </button>
+            <nav class="mobile-menu__nav">
+              <!-- // logo -->
+              <a href="/">
+                <img
+                  class="mobile-menu__logo"
+                  src="./images/logo-black.svg"
+                  width="80px"
+                  height="auto"
+                  alt="Логотип сучасної пекарні, чорний" />
+              </a>
+              <ul class="mobile-menu__list">
+                <li>
+                  <a class="link" href="#traditions-section">Наші традиції</a>
+                </li>
+                <li>
+                  <a class="link" href="#chefs-section">Шеф-кухарі</a>
+                </li>
+                <li><a class="link" href="#formats-section">Формати</a></li>
+                <li><a class="link" href="#footer-section">Контакти</a></li>
+              </ul>
+            </nav>
+            <!-- // script mobile -->
+          </div>
+        </div>
+        <!-- + -->
         <div class="container">
           <h1 class="hero-section--title">
             <span class="text-brand">Сучасна</span> пекарня
@@ -361,7 +363,7 @@
         </div>
       </section>
       <section class="contacts-section section" id="contacts-section">
-        <div class="container">
+        <div class="container map__position">
           <div class="contacts-section__container">
             <div class="contacts-section__form">
               <h2 class="contacts-section__title section__title">
@@ -429,12 +431,14 @@
                 </p>
               </form>
             </div>
-            <iframe
-              class="contacts-section__map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163630435281!2d30.488698376557704!3d50.45667757159333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1730213148490!5m2!1suk!2sua"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map">
+              <iframe
+                class="map__visual"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163630435281!2d30.488698376557704!3d50.45667757159333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1730213148490!5m2!1suk!2sua"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -443,7 +447,7 @@
       <div class="container">
         <div class="footer__container">
           <nav class="footer__nav">
-            <!-- logo -->
+            <!-- // logo -->
             <div class="logo">
               <a href="/">
                 <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
@@ -481,22 +485,21 @@
                   </a>
                 </li>
               </ul>
-              <!-- my changes -->
-              <!-- <div class="adrress-flex"> -->
-
+              <!-- // my changes -->
+              <!-- // <div class="adrress-flex"> -->
               <div class="address__flex">
                 <a class="address__social" href="#">
                   <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
-                  <!-- facebook icon -->
+                  <!-- // facebook icon -->
                 </a>
 
                 <a class="address__social" href="#">
                   <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
-                  <!-- instagram icon -->
+                  <!-- //  instagram icon -->
                 </a>
               </div>
             </div>
@@ -511,14 +514,15 @@
         </div>
       </div>
     </footer>
-    <!-- Modal window -->
+    <!-- <div class="container test">TEST</div> -->
+    <!-- // Modal window -->
     <div class="backdrop is-hidden">
       <div class="backdrop__container">
         <div class="modal">
           <button
             class="modal__btn-close js-modal-btn-close modal__svg"
             type="button">
-            <!-- svg doesn't work -->
+            <!-- // svg doesn't work -->
             <svg width="16" height="16">
               <use href="./images/icons.svg#icon-button-close"></use>
             </svg>
@@ -529,7 +533,7 @@
               Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
             </p>
           </div>
-          <!-- form -->
+          <!-- // form -->
           <form name="contact-form" autocomplete="on" id="myForm">
             <div class="modal__form-field input">
               <label class="input__label visually-hidden" for="user-name"
@@ -557,7 +561,7 @@
                 pattern="^\+[0-9]{12}"
                 title="Це поле є обов'язковим - введіть будь ласка Ваш номер телефону в форматі +380XXXXXXXXX"
                 required />
-              <!-- title add placeholder -->
+              <!-- // title add placeholder -->
             </div>
             <div class="modal__form-field input">
               <label class="input__label visually-hidden" for="user-email"

@@ -1,0 +1,33 @@
+.map {
+  display: flex;
+  justify-content: center;
+
+  &__position {
+    position: relative;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: static;
+    }
+  }
+
+  &__visual {
+    // flex-shrink: 1;
+    height: 280px;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    overflow-x: hidden;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 600px;
+      height: 595px;
+      border-radius: 16px;
+      position: static;
+    }
+  }
+}

@@ -11,12 +11,16 @@
   background-size: cover;
   padding: 124px 0 32px;
 
+  position: relative;
+
   @media screen and (min-width: $bp-tablet) {
     padding: 194px 0 96px;
+    position: static;
   }
 
   @media screen and (min-width: $bp-desktop) {
     padding: 272px 0;
+    position: static;
   }
 
   @media screen and (min-device-pixel-ratio: 2),

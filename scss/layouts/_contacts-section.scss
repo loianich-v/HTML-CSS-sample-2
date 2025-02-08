@@ -1,5 +1,7 @@
 .contacts-section {
+  //padding-bottom: 24px;
   padding-bottom: 0;
+  // // через мобільну мап
 
   @media screen and (min-width: $bp-tablet) {
     padding-bottom: 24px;
@@ -25,9 +27,13 @@
     width: 100%;
     max-width: 420px;
     flex-shrink: 0;
+    padding-bottom: 280px;
+
+    // висота мобільної мапи
 
     @media screen and (min-width: $bp-tablet) {
       max-width: 605px;
+      padding-bottom: 0;
     }
   }
 
@@ -80,20 +86,6 @@
 
     @media screen and (min-width: $bp-tablet) {
       margin-bottom: 24px;
-    }
-  }
-
-  &__map {
-    // flex-shrink: 1;
-    height: 176px;
-    width: 110%;
-    border: 0;
-    border-radius: none;
-
-    @media screen and (min-width: $bp-tablet) {
-      width: 600px;
-      height: 595px;
-      border-radius: 16px;
     }
   }
 

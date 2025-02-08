@@ -22,6 +22,10 @@
     align-items: center;
     flex-grow: 1;
     gap: 40px;
+
+    & a {
+      z-index: 7;
+    }
   }
 
   &__menu {
@@ -54,6 +58,7 @@
       height: 24px;
       padding: 0;
       pointer-events: all;
+      z-index: 7;
 
       @media screen and (min-width: $bp-desktop) {
         display: none;

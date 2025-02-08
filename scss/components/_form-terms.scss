@@ -23,4 +23,12 @@
     font-weight: 400;
     line-height: 18px;
   }
+
+  &::after {
+    background-image: url(../images/decor-bread-large-mob.png);
+    width: 100px;
+    height: 92px;
+    right: 0;
+    top: 84.5%;
+  }
 }
