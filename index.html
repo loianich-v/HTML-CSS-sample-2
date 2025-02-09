@@ -40,7 +40,7 @@
           <button
             class="header__button--burger mobile-menu__btn-open js-menu-btn-open"
             type="button">
-            <svg class="mobile-menu__svg" width="24" height="24">
+            <svg class="mobile-menu__svg burger" width="24" height="24">
               <use href="./images/icons.svg#icon-burger"></use>
             </svg>
           </button>
@@ -55,7 +55,7 @@
             <button
               class="modal__btn-close mobile-menu__btn-close js-menu-btn-close"
               type="button">
-              <svg width="16" height="16">
+              <svg class="mobile-menu__svg" width="16" height="16">
                 <use href="./images/icons.svg#icon-button-close"></use>
               </svg>
             </button>
@@ -534,58 +534,60 @@
             </p>
           </div>
           <!-- // form -->
-          <form name="contact-form" autocomplete="on" id="myForm">
-            <div class="modal__form-field input">
-              <label class="input__label visually-hidden" for="user-name"
-                >Ім’я</label
-              >
-              <input
-                class="input__controller"
-                id="user-name"
-                name="user-name"
-                type="text"
-                placeholder="Ім’я"
-                title="Це поле є обов'язковим - введіть будь ласка Ваше ім'я"
-                required />
-            </div>
-            <div class="modal__form-field input">
-              <label class="input__label visually-hidden" for="user-tel"
-                >Телефон</label
-              >
-              <input
-                class="input__controller"
-                id="user-tel"
-                name="user-tel"
-                type="tel"
-                placeholder="Телефон"
-                pattern="^\+[0-9]{12}"
-                title="Це поле є обов'язковим - введіть будь ласка Ваш номер телефону в форматі +380XXXXXXXXX"
-                required />
-              <!-- // title add placeholder -->
-            </div>
-            <div class="modal__form-field input">
-              <label class="input__label visually-hidden" for="user-email"
-                >Електронна пошта</label
-              >
-              <input
-                class="input__controller"
-                id="user-email"
-                name="user-email"
-                type="email"
-                placeholder="Електронна пошта"
-                title="Це поле є обов'язковим - введіть будь ласка Вашу електронну пошту"
-                required />
-            </div>
-            <button class="button modal__button" type="submit">
-              Замовити дзвінок
-            </button>
-            <p class="form-terms">
-              Натискаючи на кнопку я погоджуюсь
-              <a class="form-terms__link" href="#"
-                >з політикою конфіденційності</a
-              >
-            </p>
-          </form>
+          <div class="modal__contact-form-container">
+            <form name="contact-form" autocomplete="on" id="myForm">
+              <div class="modal__form-field input">
+                <label class="input__label visually-hidden" for="user-name"
+                  >Ім’я</label
+                >
+                <input
+                  class="input__controller"
+                  id="user-name"
+                  name="user-name"
+                  type="text"
+                  placeholder="Ім’я"
+                  title="Це поле є обов'язковим - введіть будь ласка Ваше ім'я"
+                  required />
+              </div>
+              <div class="modal__form-field input">
+                <label class="input__label visually-hidden" for="user-tel"
+                  >Телефон</label
+                >
+                <input
+                  class="input__controller"
+                  id="user-tel"
+                  name="user-tel"
+                  type="tel"
+                  placeholder="Телефон"
+                  pattern="^\+[0-9]{12}"
+                  title="Це поле є обов'язковим - введіть будь ласка Ваш номер телефону в форматі +380XXXXXXXXX"
+                  required />
+                <!-- // title add placeholder -->
+              </div>
+              <div class="modal__form-field input">
+                <label class="input__label visually-hidden" for="user-email"
+                  >Електронна пошта</label
+                >
+                <input
+                  class="input__controller"
+                  id="user-email"
+                  name="user-email"
+                  type="email"
+                  placeholder="Електронна пошта"
+                  title="Це поле є обов'язковим - введіть будь ласка Вашу електронну пошту"
+                  required />
+              </div>
+              <button class="button modal__button" type="submit">
+                Замовити дзвінок
+              </button>
+              <p class="form-terms">
+                Натискаючи на кнопку я погоджуюсь
+                <a class="form-terms__link" href="#"
+                  >з політикою конфіденційності</a
+                >
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </div>

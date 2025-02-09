@@ -15,6 +15,7 @@
     // margin-top: 32px;
     align-items: center;
     gap: 40px;
+    z-index: 6;
   }
 
   &__nav {
@@ -51,6 +52,7 @@
     }
 
     &--burger {
+      display: block;
       background-color: transparent;
       border: none;
       fill: var(--color-brand-light);
@@ -58,7 +60,7 @@
       height: 24px;
       padding: 0;
       pointer-events: all;
-      z-index: 7;
+      z-index: 2;
 
       @media screen and (min-width: $bp-desktop) {
         display: none;

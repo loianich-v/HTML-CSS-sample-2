@@ -4,11 +4,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(49, 38, 26, 0.4);
+  background-color: rgba(49, 38, 26, 0);
   transform: translateY(-360px);
   transition: transform 0.5s;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     display: none;
     visibility: hidden;
     opacity: 0;
@@ -17,6 +17,7 @@
 
   &.is-open {
     transform: translateY(0);
+    background-color: rgba(49, 38, 26, 0.4);
   }
 
   &__btn-close {
@@ -28,17 +29,52 @@
 
   &__svg {
     position: absolute;
-    top: -4px;
-    right: 24px;
-    width: 24px;
-    height: auto;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    width: 16px;
+    height: 16px;
 
     @media screen and (min-width: $bp-tablet) {
       top: -6px;
       right: 24px;
       width: 36px;
       height: auto;
+      z-index: 2;
+
+      width: 22px;
+      height: 22px;
     }
+
+    &.burger {
+      width: 24px;
+      height: 24px;
+      top: -6px;
+      right: 14px;
+
+      @media screen and (min-width: $bp-tablet) {
+        width: 36px;
+        height: 36px;
+        right: 24px;
+      }
+    }
+
+    // @media screen and (min-width: $bp-tablet) {
+    //   top: -6px;
+    //   right: 24px;
+    //   width: 36px;
+    //   height: auto;
+    //   z-index: 2;
+
+    //   width: 22px;
+    //   height: 22px;
+
+    //   &.burger {
+    //     width: 36px;
+    //     height: 36px;
+    //   }
+    // }
   }
 
   &__container {
@@ -53,6 +89,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 3;
 
     @media screen and (min-width: $bp-tablet) {
       height: 360px;

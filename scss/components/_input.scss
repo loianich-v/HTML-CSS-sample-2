@@ -1,5 +1,6 @@
 .input {
   position: relative;
+  z-index: 1;
 
   &__label {
     position: absolute; /* робить елемент блоковим за замов */
