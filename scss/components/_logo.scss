@@ -1,4 +1,8 @@
 .logo {
   flex-grow: 1;
   padding: 6px 20px;
+
+  &__main-no-url {
+    pointer-events: none;
+  }
 }
